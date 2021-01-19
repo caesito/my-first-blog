@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Blog em Django</title>
+    </head>
+    <body>
+        <div>
+            {% for post in posts%}
+
+        </div>
+        <div>
+
+            <p>{{post.published_date}}</p>
+            <h2><a href="">{{post.title}}</a></h2>
+            <p>{{post.text|linebreaksbr}}</p>
+        
+        </div>
+
+        {% endfor %}
+        </body>
+
+</html>
